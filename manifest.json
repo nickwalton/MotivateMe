@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "MotivateMe",
+  "version": "1.0",
+  "description": "An extension that replaces pictures with motivational memes. ",
+  "icons": { "16": "symbol-16.png", "128": "symbol-100.png" },
+  "content_scripts": 
+  [
+    {
+      "matches": ["*://*/*"],
+      "js": ["script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
